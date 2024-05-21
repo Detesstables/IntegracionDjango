@@ -1,0 +1,20 @@
+.ruleta img{
+    height: 750px;
+}
+
+/* contenedor de contactor */
+.contact-container {
+    background-color: #FFC0CB; /* Color rosa */
+    padding: 40px; /* Añadir espaciado interior */
+    border-radius: 10px; /* Añadir bordes redondeados */
+  }
+
+/*   .clima-card {
+    background-color: #fff;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+} */

@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{%load static%}
+
+{% block content %}
+
+<link href="{% static 'css/styles.css' %}" rel="stylesheet">
+
+<div class="ruleta container-fluid mt-2">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'img/Anya.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'img/portada_haikyuu.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'img/portada_power.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+  </div>
+
+  <!-- Presentacion -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col">
+        <h1 class="text-center">Bienvenido</h1>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-8">
+        <h2>Nuestra Papelería</h2>
+        <p>Somos una papelería especializada en ofrecer productos de calidad para tus necesidades de escritura y organización. Contamos con una amplia gama de productos, entre los que se incluyen:</p>
+        <ul>
+          <li>Cuadernos de diversos tamaños y estilos.</li>
+          <li>Tacos de notas para anotar cosas importantes.</li>
+          <li>Marcadores de páginas para marcar tus lecturas favoritas.</li>
+        </ul>
+        <p>¡Visítanos y descubre todo lo que tenemos para ofrecerte!</p>
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'img/creativamente.png' %}" alt="Papelería" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección de Contacto -->
+  <div class="container mt-5 contact-container"> 
+    <div class="row mt-4">
+      <div class="col-md-6 offset-md-3 text-center">
+        <h2>Contacto</h2>
+        <p>Estamos aquí para ayudarte. Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros en nuestro Instagram!</p>
+        <a href="https://www.instagram.com/creativamentepapeleria/" target="_blank" class="text-dark"><i class="fab fa-instagram fa-3x"></i></a> <!-- Aumentamos el tamaño del ícono -->
+        <p>Síguenos!</p> <!-- Añadimos un texto "Síguenos" -->
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}
