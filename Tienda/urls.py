@@ -21,6 +21,9 @@ from . import views
 urlpatterns = [
     path('', views.inicio, name='inicio'),
     path('registro/', views.registro, name='registro'),
-    path('login/', views.login, name='login'),
-    path('logout/', views.logout, name='logout'),
+    path('login/', views.login_view, name='login'),
+    path('logout/', views.logout_view, name='logout'),
+    path('libretas/', views.libretas, name='libretas'),
+    path('marca_paginas/', views.marca_paginas, name='marca_paginas'),
+    path('tacos_notas/', views.tacos_notas, name='tacos_notas')
 ]

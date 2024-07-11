@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{%load static%}
+
+{% block content %}
+<section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Tacos de notas</h1>
+        <p class="lead text-body-secondary">Los tacos de notas, con su simplicidad y versatilidad, se han convertido en un elemento esencial en cualquier escritorio. 
+          Desde pequeñas notas rápidas hasta recordatorios importantes, estos pedacitos de papel ofrecen una forma conveniente y eficiente de capturar ideas, hacer 
+          listas y mantenernos organizados en nuestra vida diaria.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-4 mt-3">
+        <div class="card">
+          <img src="{% static 'img/tacos_haikyu.jpg' %}" class="card-img-top" alt="Taco de Notas 1">
+          <div class="card-body">
+            <h5 class="card-title">Taco de Notas Kageyama y Hinata</h5>
+            <p class="card-text">Con diseños florales para tus recordatorios diarios.</p>
+            <p><i class="fas fa-ruler"></i> De: Haikyuu</p>
+            <p><i class="fas fa-dollar-sign"></i> Precio: $3.000 c/u</p>
+            <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Comprar ahora</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-3">
+        <div class="card">
+          <img src="{% static 'img/tacos_killua.jpg' %}" class="card-img-top" alt="Taco de Notas 2">
+          <div class="card-body">
+            <h5 class="card-title">Taco de Notas Killua</h5>
+            <p class="card-text">Diseño simple y elegante para tus notas rápidas.</p>
+            <p><i class="fas fa-ruler"></i> De: Hunter x Hunter</p>
+            <p><i class="fas fa-dollar-sign"></i> Precio: $3.000 c/u</p>
+            <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Comprar ahora</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-3">
+        <div class="card">
+          <img src="{% static 'img/tacos_mitsuya.jpg' %}" class="card-img-top" alt="Taco de Notas 3">
+          <div class="card-body">
+            <h5 class="card-title">Taco de Notas Mitsuya</h5>
+            <p class="card-text">Con diseños coloridos y motivadores.</p>
+            <p><i class="fas fa-ruler"></i> De: Tokyo Revengers</p>
+            <p><i class="fas fa-dollar-sign"></i> Precio: $3.000 c/u</p>
+            <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Comprar ahora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

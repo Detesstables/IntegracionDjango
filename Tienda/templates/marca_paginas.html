@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{%load static%}
+
+{% block content %}
+<section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Marca paginas</h1>
+        <p class="lead text-body-secondary">Los marcapáginas, simples pero fundamentales, son esos pequeños tesoros que nos ayudan a mantener el lugar en nuestro 
+            libro mientras nos sumergimos en el mundo de la lectura. Con una historia que se remonta a siglos atrás, estos objetos modestos han evolucionado desde simples 
+            trozos de papel hasta obras de arte en miniatura, reflejando la diversidad y la creatividad de los lectores en todo el mundo.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-4 mt-3">
+        <div class="card">
+          <img src="{% static 'img/M.Todoroki.png' %}" class="card-img-top" alt="Marca Páginas 1">
+          <div class="card-body">
+            <h5 class="card-title">Marca Página Todoroki</h5>
+            <p class="card-text">Ideal para tus lecturas favoritas.</p>
+            <p><i class="fas fa-paint-brush"></i> De: Boku no hero</p>
+            <p><i class="fas fa-dollar-sign"></i> Precio: $3.000</p>
+            <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Comprar ahora</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-3">
+        <div class="card">
+          <img src="{% static 'img/M.zenitsu.jpg' %}" class="card-img-top" alt="Marca Páginas 2">
+          <div class="card-body">
+            <h5 class="card-title">Marca Página Zenitsu</h5>
+            <p class="card-text">Con diseños únicos para cada libro.</p>
+            <p><i class="fas fa-paint-brush"></i> De: Kimetsu no yaiba</p>
+            <p><i class="fas fa-dollar-sign"></i> Precio: $2.000</p>
+            <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Comprar ahora</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-3">
+        <div class="card">
+          <img src="{% static 'img/M.Chihiro.png' %}" class="card-img-top" alt="Marca Páginas 3">
+          <div class="card-body">
+            <h5 class="card-title">Marca Página Chihiro</h5>
+            <p class="card-text">Con detalles dorados y plateados.</p>
+            <p><i class="fas fa-paint-brush"></i> De: El viaje de Chihiro</p>
+            <p><i class="fas fa-dollar-sign"></i> Precio: $2.000</p>
+            <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Comprar ahora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

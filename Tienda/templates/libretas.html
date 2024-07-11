@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{%load static%}
+
+{% block content %}
+<section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Libretas</h1>
+        <p class="lead text-body-secondary">Las libretas, esos modestos compañeros de papel, han sido testigos de innumerables ideas, reflexiones y expresiones a lo largo 
+          de la historia humana. Desde los antiguos pergaminos hasta las modernas libretas de papel, estas herramientas simples pero poderosas han desempeñado un papel 
+          fundamental en la preservación del conocimiento, la estimulación de la creatividad y la organización de nuestras vidas.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-4 mt-3">
+        <div class="card">
+          <img src="{% static 'img/libreta_snk.jpg' %}" class="card-img-top" alt="Libreta 1">
+          <div class="card-body">
+            <h5 class="card-title">Libreta Armin, Eren y Mikasa</h5>
+            <p class="card-text">Perfecta para notas diarias.</p>
+            <p><i class="fas fa-paint-brush"></i> De: Shingeki no kyojin</p>
+            <p><i class="fas fa-ruler"></i> Tamaño: A5</p>
+            <p><i class="fas fa-dollar-sign"></i> Precio: $8.000</p>
+            <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Comprar ahora</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-3">
+        <div class="card">
+          <img src="{% static 'img/libreta_killua.jpg' %}" class="card-img-top" alt="Libreta 2">
+          <div class="card-body">
+            <h5 class="card-title">Libreta Killua</h5>
+            <p class="card-text">Ideal para dibujar y escribir.</p>
+            <p><i class="fas fa-paint-brush"></i> De: Hunter x Hunter</p>
+            <p><i class="fas fa-ruler"></i> Tamaño: B5</p>
+            <p><i class="fas fa-dollar-sign"></i> Precio: $6.000</p>
+            <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Comprar ahora</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-3">
+        <div class="card">
+          <img src="{% static 'img/libreta_onepiece.jpg' %}" class="card-img-top" alt="Libreta 3">
+          <div class="card-body">
+            <h5 class="card-title">Libreta Mugiwaras</h5>
+            <p class="card-text">Estilo clásico para tus notas.</p>
+            <p><i class="fas fa-paint-brush"></i>De: One piece</p>
+            <p><i class="fas fa-ruler"></i> Tamaño: medio oficio</p>
+            <p><i class="fas fa-dollar-sign"></i> Precio: $5.000</p>
+            <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Comprar ahora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
